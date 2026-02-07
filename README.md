@@ -1,7 +1,13 @@
-# Tmux plugin
+# Tmux Dashboard Popup Plugin
 
-This is an example plugin that demonstrates Tmux plugin creation for
-[TPM](https://github.com/tmux-plugins/tpm).
+`prefix + T` opens a tmux popup and launches `tmux-dashboard`.
 
-The accompanying tutorial is here:
-[HOW_TO_PLUGIN.md](https://github.com/tmux-plugins/tpm/blob/master/HOW_TO_PLUGIN.md).
+## Launch behavior
+
+The popup runs:
+
+```bash
+bash -lc 'exec tmux-dashboard'
+```
+
+So `tmux-dashboard` should be on PATH (for example in `~/.local/bin`).
